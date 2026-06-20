@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finding The Items</title>
+
+<style>
+body{
+    margin:0;
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+canvas{
+    border:4px solid #2b1b10;
+}
+</style>
+
+</head>
+<body>
+
+<canvas id="game" width="1200" height="800"></canvas>
+
+<script>
+
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+
+function drawRoom(){
+
+    ctx.fillStyle = "#5f4632";
+    ctx.fillRect(0,0,1200,800);
+
+    ctx.fillStyle = "#462d1e";
+    ctx.fillRect(0,500,1200,300);
+
+    ctx.fillStyle = "#3c2814";
+    ctx.fillRect(450,70,300,180);
+
+    ctx.fillStyle = "#5078aa";
+    ctx.fillRect(465,85,270,150);
+
+    ctx.fillStyle = "#3c2814";
+    ctx.fillRect(595,85,10,150);
+    ctx.fillRect(465,155,270,10);
+
+    ctx.fillStyle = "#5a3c1e";
+    ctx.fillRect(80,180,180,320);
+
+    ctx.fillStyle = "#321e0f";
+    ctx.fillRect(80,250,180,5);
+    ctx.fillRect(80,320,180,5);
+    ctx.fillRect(80,390,180,5);
+    ctx.fillRect(80,460,180,5);
+
+    ctx.fillStyle = "#321e0f";
+    ctx.fillRect(900,180,180,130);
+
+    ctx.fillStyle = "#8c8c78";
+    ctx.fillRect(915,195,150,100);
+
+    ctx.fillStyle = "#644128";
+    ctx.fillRect(450,400,300,120);
+    ctx.fillRect(470,520,20,80);
+    ctx.fillRect(710,520,20,80);
+
+    ctx.fillStyle = "#3c5032";
+    ctx.fillRect(120,550,260,120);
+    ctx.fillRect(100,520,40,120);
+    ctx.fillRect(360,520,40,120);
+
+    ctx.fillStyle = "#503219";
+    ctx.fillRect(950,350,140,250);
+
+    ctx.fillStyle = "#dcb428";
+    ctx.beginPath();
+    ctx.arc(1060,480,8,0,Math.PI*2);
+    ctx.fill();
+}
+
+drawRoom();
+
+</script>
+
+</body>
+</html>
